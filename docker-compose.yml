@@ -1,0 +1,8 @@
+# prettier-ignore
+version: '2.0'
+services:
+  test:
+    image: mheers/cypress:${CYPRESS_VERSION}_${CYPRESS_IMAGE_VERSION}
+    # command:
+    #   - sleep
+    #   - infinity
