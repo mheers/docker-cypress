@@ -5,7 +5,7 @@ ARG CYPRESS_VERSION
 ENV CYPRESS_CACHE_FOLDER=/app/.cache
 
 # install cypress
-RUN npm_config_yes=true npm install -g cypress@${CYPRESS_VERSION}
+RUN npm_config_yes=true npm install -g cypress@${CYPRESS_VERSION} wait-on
 
 # install dependencies
 RUN apt --allow-releaseinfo-change update && \
